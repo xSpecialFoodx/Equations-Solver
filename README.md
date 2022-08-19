@@ -1,5 +1,7 @@
 # Equations-Solver
 Solves equations that are given as texts.
+<br/><br/>
+
 
 An example of a usage:
 
