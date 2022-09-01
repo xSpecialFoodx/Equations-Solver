@@ -21,7 +21,7 @@ the "BeautifiedEquationText" variable will get "a * b / (a * (c / d / (a / b)) *
 
 The "SimplifiedEquationText" variable will get "a * d / (b * c)".
 
-The "Solution" variable will get 42, which is the solution to this equation if X is set as 5.
+The "Solution" variable will get 42, which is the solution to the equation if X is set as 5.
 <br/><br/>
 
 
