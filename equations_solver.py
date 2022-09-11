@@ -111,7 +111,7 @@ def SimplifyEquationText(EquationText: str) -> str:
 
     # Start
 
-    return BeautifyEquationText(str(sympy.sympify(EquationText.replace('^', "**"))).replace("**", '^'))
+    return BeautifyEquationText(str(sympy.sympify(EquationText.replace('^', "**").replace(':', '/'))).replace("**", '^'))
 
 
 def CheckEquation(EquationText: str) -> sympy.core.mul.Mul:
@@ -131,7 +131,7 @@ def CheckEquation(EquationText: str) -> sympy.core.mul.Mul:
 
     # Start
 
-    return sympy.sympify(EquationText.replace('^', "**").lower())
+    return sympy.sympify(EquationText.replace('^', "**").replace(':', '/').lower())
 
 
 def RunEquation(Equation: sympy.core.mul.Mul, Variables: Dict[str, float] = None) -> float:
